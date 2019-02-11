@@ -1,6 +1,69 @@
 # Docker Tips
 From Using Docker, Adrian Mouat
+# Commands
+## info (docker * )
+{command} --help
+or 
+- help
+- info
+- version
+- diff
+- events
+- inspect
+- logs
+- port
+- ps
+- top
+## run (docker run)
+- -a, --attach :  ストリーム(stdout, stderr ..) をアタッチする
+- -d, --detach : コンテナをバックグラウンドで起動。コンテナIDが戻り値
+- -i, --interactive : stdin付きで起動
+- --restart : 終了したコンテナをDockerが再起動する方法を設定
+- --rm : 終了時にコンテナを自動削除
+- -t, --tty : TTYの割り当て
+- -e, --env : コンテナ内の環境設定。　-e var1=foo1。--env-fileでファイル指定
+- -h, --hostname : コンテナのUnix　hostnameの設定
+- --name : コンテナ名の設定　--name FOO.
+- -v, --volume  : ヴォリュームの設定
+- --volumes-form :指定されたコンテナからボリュームをマウント。データコンテナと併用される
+- --expose
+- --link
+- -p, --publish : ポートの公開　 (ref docker port)
+- -p, --publish-all
+- --entrypoint
+- -u, --user :コマンドのユーザーの設定
+- -w, --workdir : コンテナの作業ディレクトリーの設定
 
+## control (docker * )
+- attach
+- create
+- cp
+- exec
+- kill
+- pause
+- restart
+- rm
+- start
+- stop
+- unpause
+
+## image (docker * )
+- build
+- commit
+- export
+- history
+- images
+- import
+- load
+- rmi
+- save
+- tag
+## registory (docker * )
+- login
+- logout
+- pull
+- push
+- search
 # 1.
 Linux Containers(LXC) 2008-
 - CGroups
